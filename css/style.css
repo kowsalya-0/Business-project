@@ -1,0 +1,536 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --black: black;
+    --orange: orange;
+    --red: red;
+    --lightgrey: lightgrey;
+    --white: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .logo {
+    position: relative;
+    left: 50px;
+}
+
+nav .menu {
+    position: relative;
+    right: 140px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav button {
+    padding: 10px 30px;
+    width: 150px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    outline: none;
+}
+
+.profile-cards {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-card{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.content-bio{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%
+}
+.content-card button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-card {
+    width: 50%;
+    height: 100vh;
+}
+
+.abt-us {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abt-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: 80vh;
+}
+
+.abt-imgs {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.abt-imgs>img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.img1 {
+    width: 200px;
+    height: 243px;
+    left: 180px;
+    top: 0;
+}
+
+.img2 {
+    width: 200px;
+    height: 200px;
+    left: 400px;
+    top: 43px;
+}
+
+.img3 {
+    width: 200px;
+    height: 200px;
+    left: 240px;
+    top: 255px;
+}
+
+.abt-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+.abt-content p {
+    width: 50%;
+}
+
+.abt-content button {
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    outline: none;
+    padding: 10px;
+    width: 150px;
+
+}
+
+.buisness-cnt {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.buisness-cnt p {
+    padding: 30px;
+}
+
+.prediction-card {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 50px;
+    text-align: center;
+}
+
+.prediction-card .card-1 {
+    height: 1vh;
+    justify-content: center;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.prediction-card .card-2 {
+    height: 1vh;
+    justify-content: center;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.prediction-card .card-3 {
+    height: 1vh;
+    justify-content: center;
+    padding: 15px 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.prediction-card .card-4 {
+    height: 1vh;
+    justify-content: center;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.prediction-card .cards-align {
+    display: flex;
+    flex-direction: column;
+}
+
+.prediction-img {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.prediction-img .img-parent {
+    width: 100%;
+}
+
+.img-parent img {
+    height: max-content;
+    width: 100%;
+}
+
+.latest-blog {
+    background-color: aliceblue;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-blog .header {
+    text-align: center;
+}
+
+.latest-blog button {
+    border: none;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
+.partner-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.partner-cards .logos {
+    display: flex;
+    gap: 50px;
+}
+
+.partner-cards a {
+    text-decoration: none;
+    padding: 30px;
+    color: var(--black);
+}
+
+.blog-cards {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    background-color: aliceblue;
+}
+
+.blog-card-1 {
+    background-color: var(--white);
+}
+
+.blog-card-2 {
+    background-color: var(--white);
+}
+
+.blog-card-3 {
+    background-color: var(--white);
+}
+
+.blog-cnt {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.our-clients {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    gap: 50px;
+    text-align: justify;
+    background-color: white;
+}
+
+.client-card {
+    width: 40%;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.question-card {
+    display: flex;
+    background-color: aliceblue;
+    padding: 10px;
+    gap: 40px;
+}
+
+.question-card .que-cnt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.que-img {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.que-img img {
+    width: 100%;
+    height: max-content;
+}
+
+.que-cnt {
+    width: 100%;
+}
+
+.que-cnt .cnt-card {
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+.information {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.information .info-box {
+    background-color: var(--black);
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    padding: 10px;
+    gap: 100px;
+}
+
+.information .info-cnt {
+    padding: 10px;
+    color: var(--white);
+}
+
+.btn {
+    width: 20%;
+}
+
+.information button {
+    padding: 8px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.bio {
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+.page-cnt {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio .cnt {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-us .contact-icons {
+    display: flex;
+    gap: 50px;
+    font-size: 2rem;
+    color: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    .profile-cards {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: max-content;
+    }
+
+    .img-card {
+        width: 100%;
+        height: max-content;
+    }
+
+    .content-card {
+        align-items: center;
+    }
+
+    .abt-cards {
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+        align-items: center;
+    }
+
+    .abt-content {
+        align-items: center;
+    }
+
+    .abt-imgs {
+        height: max-content;
+        width: 100%;
+    }
+
+    .abt-imgs .img1 {
+        position: static;
+        width: 100%;
+        height: max-content;
+        border-radius: 20px;
+    }
+
+    .abt-imgs .img2 {
+        position: static;
+        width: 100%;
+        height: max-content;
+        border-radius: 20px;
+    }
+
+    .abt-imgs .img3 {
+        position: static;
+        width: 100%;
+        height: max-content;
+        border-radius: 20px;
+    }
+
+    .prediction-img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .prediction-card {
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .prediction-card .cards-align {
+        border: none;
+        width: 10%;
+        padding: 20px;
+    }
+
+    .partner-cards .logos {
+        flex-direction: column;
+    }
+
+    .blog-cards {
+        flex-direction: column;
+    }
+
+    .information {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+
+    .info-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .bio {
+        flex-direction: column;
+    }
+
+    .contact-icons i {
+        font-size: 1rem;
+    }
+
+    .question-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question-card h1 {
+        text-align: center;
+    }
+}
