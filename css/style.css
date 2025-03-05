@@ -71,6 +71,7 @@ nav button {
     border: none;
     background-color: var(--black);
     color: var(--white);
+    border-radius: 5px;
 }
 
 .img-card img {
@@ -86,16 +87,24 @@ nav button {
 .abt-us {
     display: flex;
     justify-content: center;
+    width: 100%;
     padding: 50px;
     gap: 20px;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
 }
-
+.abt-cnt{
+    width: 70%;
+}
+.abt-cnt h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
 .abt-cards {
     display: flex;
     justify-content: space-evenly;
-    padding: 30px;
+    width: 100%;
     height: 80vh;
 }
 
@@ -150,19 +159,19 @@ nav button {
     outline: none;
     padding: 10px;
     width: 150px;
-
+    border-radius: 5px;
 }
 
 .buisness-cnt {
-    text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 10px;
     padding: 30px;
 }
 
-.buisness-cnt p {
-    padding: 30px;
+.buisness-cnt h2 {
+    text-align: center;
 }
 
 .prediction-card {
@@ -225,7 +234,7 @@ nav button {
 }
 
 .prediction-img .img-parent {
-    width: 100%;
+    width: 60%;
 }
 
 .img-parent img {
@@ -255,6 +264,14 @@ nav button {
     text-align: center;
 }
 
+.latest-blog img {
+    width: 450px;  
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    display: block; 
+}
+
 .partner-cards {
     display: flex;
     flex-direction: column;
@@ -280,17 +297,19 @@ nav button {
     gap: 20px;
     background-color: aliceblue;
 }
-
-.blog-card-1 {
-    background-color: var(--white);
+.action a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 80px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
 }
-
-.blog-card-2 {
+.action{
     background-color: var(--white);
-}
-
-.blog-card-3 {
-    background-color: var(--white);
+    border-radius: 10px;
 }
 
 .blog-cnt {
@@ -329,7 +348,7 @@ nav button {
 }
 
 .que-img {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -352,6 +371,7 @@ nav button {
 }
 
 .information {
+    width: 100%;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -360,23 +380,19 @@ nav button {
 .information .info-box {
     background-color: var(--black);
     border-radius: 10px;
-    justify-content: space-between;
     display: flex;
-    width: 60%;
-    align-items: center;
+    width: 50%;
     padding: 10px;
+    align-items: center;
+    justify-content:center;
     gap: 100px;
 }
 
-.information .info-cnt {
+.info-cnt {
+    width: 50%;
     padding: 10px;
     color: var(--white);
 }
-
-.btn {
-    width: 20%;
-}
-
 .information button {
     padding: 8px;
     width: 100px;
@@ -388,21 +404,36 @@ nav button {
 
 .bio {
     display: flex;
-    padding: 50px;
-    justify-content: space-evenly;
+    padding: 15px;
+    width: 100%;
+    gap: 50px;
+    background-color: black;
+    color: white;
 }
-
+.bio-card{
+    display: flex;
+    gap: 50px;
+}
 .page-cnt {
-    width: 20%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
-
+.page-cnt p{
+    text-align: justify;
+}
 .bio .cnt {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
-
+.bio a{
+    text-decoration: none;
+    color: grey;
+}
+.bio h4{
+    padding-bottom: 10px;
+}
 .contact-us {
     display: flex;
     flex-direction: column;
@@ -411,11 +442,10 @@ nav button {
 
 .contact-us .contact-icons {
     display: flex;
-    gap: 50px;
-    font-size: 2rem;
+    gap: 10px;
+    font-size: 20px;
     color: black;
 }
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     nav {
         display: none;
@@ -430,10 +460,14 @@ nav button {
     .img-card {
         width: 100%;
         height: max-content;
+        padding: 10px;
     }
 
     .content-card {
+        text-align: center;
+        font-size: 12px;
         align-items: center;
+        width: 100%;
     }
 
     .abt-cards {
@@ -454,25 +488,34 @@ nav button {
 
     .abt-imgs .img1 {
         position: static;
-        width: 100%;
+        width: 60%;
         height: max-content;
         border-radius: 20px;
+        padding-bottom: 10px;
     }
 
     .abt-imgs .img2 {
         position: static;
-        width: 100%;
+        width: 60%;
         height: max-content;
         border-radius: 20px;
+        padding-bottom: 10px;
     }
 
     .abt-imgs .img3 {
         position: static;
-        width: 100%;
+        width: 60%;
         height: max-content;
         border-radius: 20px;
+        padding-bottom: 10px;
     }
-
+    .abt-content{
+        width: 100%;
+        padding: 10px;
+    }
+    .abt-content p {
+        width: 70%;
+    }
     .prediction-img {
         width: 100%;
         height: 50%;
@@ -499,26 +542,26 @@ nav button {
     .blog-cards {
         flex-direction: column;
     }
-
-    .information {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .information .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: static;
-    }
-
-    .info-box {
+    .information{
         width: 100%;
-        flex-direction: column;
     }
-
-    .bio {
+    .info-box{
         flex-direction: column;
+        width: auto;
+        
+    }
+    .info-cnt{
+        width: 100%;
+    }
+    .bio{
+        gap: 20px;
+        font-size: 10px;
+    }
+    .bio-card{
+        gap: 20px;
+    }
+    .bio .page-cnt{
+        font-size: 10px;
     }
 
     .contact-icons i {
